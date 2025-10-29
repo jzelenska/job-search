@@ -4,12 +4,16 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
 
+// For easy access and quick reference, you can keep this dashboard in one of the following ways:
+// 1. Pin this document in your Atlas workspace or favorites.
+// 2. Push it to a GitHub repository and bookmark the GitHub page for live access.
+// 3. Deploy via GitHub Pages for a permanent live link (you can then bookmark or add to your browser toolbar).
+
 export default function JobSearchDashboard() {
   const [applications, setApplications] = useState(() => {
     const saved = localStorage.getItem('applications');
     return saved ? JSON.parse(saved) : [];
   });
-  
   const [company, setCompany] = useState('');
   const [role, setRole] = useState('');
   const [status, setStatus] = useState('');

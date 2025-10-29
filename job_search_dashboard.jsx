@@ -9,6 +9,7 @@ export default function JobSearchDashboard() {
     const saved = localStorage.getItem('applications');
     return saved ? JSON.parse(saved) : [];
   });
+  
   const [company, setCompany] = useState('');
   const [role, setRole] = useState('');
   const [status, setStatus] = useState('');
